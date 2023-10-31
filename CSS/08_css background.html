@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Background </title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            margin-bottom: 500px;
+        }
+        #bg-color{
+            background-color: teal;
+        }
+        #bg-image{
+            box-shadow: 0 0 10px;
+            padding: 15px;
+            width: 500px;
+            background-image: url("./Img/two.jpg");
+        }
+        #bg-repeat{
+            width: 500px;
+            height: 300px;
+            box-shadow: 0 0 10px black;
+            background-color: lightsalmon;
+            background-image: url("./img/three.jpg");
+        }
+        #bg-attachment{
+            height: 250px;
+            box-shadow: 0 0 10px black;
+            background: white url("./Img/workspace.jpg") no-repeat fixed center;
+        }
+        #bg-size{
+            width: 500px;
+            height: 300px;
+            box-shadow: 0 0 10px black;
+            background-image: url("./Img/workspace.jpg");
+            background-size: cover;
+        }
+        #bg-gradient{
+            width: 500px;
+            height: 300px;
+            box-shadow: 0 0 10px black;
+            background: linear-gradient(45deg,black,red);
+
+        }
+    </style>
+</head>
+<body>
+    <h2>Background color</h2>
+    <div id="bg-color">
+        <h1>I am with Teal color Background</h1>
+    </div>
+        <h2>Background Image</h2>
+        <div id="bg-image">
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui eaque modi sed perferendis! In ullam rem molestias quia iure tenetur deserunt architecto? Odio, eum nesciunt. Quidem veniam possimus, optio delectus perspiciatis vel exercitationem nostrum illo, ab laboriosam consectetur cupiditate vitae deserunt. Veritatis at, ut ipsam tempora sed doloremque eos voluptas.</p>
+        </div>
+        <h2>Background Attachment</h2>
+        <div id="bg-attachment">
+
+        </div>
+    <h2>Background Repeat</h2>
+    <div id="bg-repeat">
+
+    </div>
+    <h2>Background Size</h2>
+    <div id="bg-size">
+
+    </div>
+    <h2>Gradient</h2>
+    <div id="bg-gradient">
+
+    </div>
+</body>
+</html>

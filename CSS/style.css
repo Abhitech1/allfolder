@@ -1,0 +1,41 @@
+.main-content{
+    border: 15px solid saddlebrown;
+    width: 300px;
+    height: 450px;
+    margin: auto;
+    box-shadow: 0 10px 10px black;
+    overflow: hidden;
+    position: relative;
+
+
+}
+.main-content img{
+    width: inherit;
+    height: inherit;
+    transition: all 0.5s;
+}
+.main-content:hover img{
+    transform: scale(1.2,1.2);
+}
+.content-left{
+    background-image: url("./Img/door_PNG17618\ \(1\).png");
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    transform: perspective(400px) rotateY(0deg);
+    transform-origin: left;
+}
+.main-content:hover .content-left{
+    transform: perspective(400px) rotate(90deg);
+}
+.content-right{
+    background-image: url("./Img/door_PNG17618\ \(1\).png");
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    transform: perspective(400px) rotateY(0deg);
+    transform-origin: left;
+}

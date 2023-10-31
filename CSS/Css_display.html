@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Display</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        div{
+            margin: 20px;
+        }
+        h3{
+            background-color: lightsalmon;
+            padding: 5px;
+            margin: 5px;
+            display: inline;
+        }
+        span{
+            background-color: orange;
+            display: block;
+        }
+        a{
+            background-color: blueviolet;
+            color: white;
+            padding: 5px;
+            margin: 5px;
+            display: block;
+        }
+        h1{
+            background-color: darkred;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            display: none;
+        }
+        .parent{
+            background-color: gray;
+            color: white;
+            padding: 15px;
+        }
+        .child{
+            background-color: blue;
+            color: white;
+            padding: 15px;
+            width: 200px;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <!--inline-->
+    <div>
+        <h3>Good Morning</h3>
+        <h3>Good Evening</h3>
+        <h3>Good Afternoon</h3>
+    </div>
+    <!--block-->
+    <div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. <span>1hic debitis modi quam aut officia.</span> Itaque odio quod provident, placeat perspiciatis eveniet alias quasi mollitia esse doloribus excepturi natus distinctio obcaecati temporibus nisi unde commodi corporis possimus iure eius. <span>2.ex voluptates totam dignissimos sint veniam, libero consectetur distinctio quaerat!</span></p>
+    </div>
+    <!--block-->
+    <div>
+        <a href="#">Home</a>
+        <a href="#">About us</a>
+        <a href="#">Courses</a>
+        <a href="#">Contact Us</a>
+    </div>
+    <!--hide-->
+    <div>
+        <h1>Hello I am Hidden</h1>
+    </div>
+    <!--inline block-->
+    <div class="parent">
+        <div class="child">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum perferendis beatae commodi quos amet, repudiandae odio dolores, molestias, quae eaque molestiae nulla cupiditate distinctio deleniti accusamus nam ut at ducimus nesciunt! Consequatur officia repudiandae eveniet rerum ad iste corporis dolore dolor architecto nulla, molestiae cum eligendi tenetur nostrum asperiores. Blanditiis?</p>
+
+
+        </div>
+        <div class="child">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum perferendis beatae commodi quos amet, repudiandae odio dolores, molestias, quae eaque molestiae nulla cupiditate distinctio deleniti accusamus nam ut at ducimus nesciunt! Consequatur officia repudiandae eveniet rerum ad iste corporis dolore dolor architecto nulla, molestiae cum eligendi tenetur nostrum asperiores. Blanditiis?</p>
+            
+
+        </div>
+        <div class="child">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum perferendis beatae commodi quos amet, repudiandae odio dolores, molestias, quae eaque molestiae nulla cupiditate distinctio deleniti accusamus nam ut at ducimus nesciunt! Consequatur officia repudiandae eveniet rerum ad iste corporis dolore dolor architecto nulla, molestiae cum eligendi tenetur nostrum asperiores. Blanditiis?</p>
+            
+
+        </div>
+        <div class="child">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum perferendis beatae commodi quos amet, repudiandae odio dolores, molestias, quae eaque molestiae nulla cupiditate distinctio deleniti accusamus nam ut at ducimus nesciunt! Consequatur officia repudiandae eveniet rerum ad iste corporis dolore dolor architecto nulla, molestiae cum eligendi tenetur nostrum asperiores. Blanditiis?</p>
+            
+
+        </div>
+
+    </div>
+    
+    
+</body>
+</html>

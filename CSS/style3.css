@@ -1,0 +1,35 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+.text-primary{
+    color: darkcyan;
+}
+/*-----------------Main Navbar---------------------*/
+.main-nav{
+    background: linear-gradient(45deg,black,darkslategray);
+    color: white;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.main-nav img{
+    width: 30px;
+    height: 30px;
+}
+.main-nav ul{
+    display: flex;
+    list-style-type: none;
+
+}
+.main-nav ul li a{
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}

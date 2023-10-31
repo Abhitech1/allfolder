@@ -1,0 +1,633 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    max-width: 100%;
+    max-height: 100%;
+    font-size: 100%;
+    font-family: 'raleway', sans-serif;
+    }
+
+/* ------------header section-------------- */
+
+.header {
+    min-height: 100%;
+    min-width: 100%;
+    background: url(./images/banner.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    
+}
+
+nav {
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+nav img {
+    width: 150px;
+}
+.nav-bar {
+    flex: 1;
+    text-align: right;
+}
+.nav-bar ul li {
+    list-style:none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.icon {
+    display: inline-block;
+    padding: 8px 12px;
+    font-size: 17px;
+    color: #eb699e;
+}
+
+.nav-bar ul li a{
+    color: #000;
+    font-size: 13px;
+    text-decoration: none;
+    right: -200px;
+}
+
+.nav-link{
+    flex: 1;
+    text-align: right;
+ }
+ .nav-link ul li{
+     list-style: none;
+     display: inline-block;
+     padding: 8px 12px;
+     position: relative;
+ }
+ .nav-link ul li a{
+     color: white;
+     text-decoration: none;
+     font-size: 13px;
+  }
+.nav-link ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #f44336;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-link ul li:hover::after{
+    width: 100%;
+
+}
+/*------text box-----*/
+.text-box {
+    display: flex;
+    justify-content: left;
+    width: 90%;
+    margin: auto;
+    padding-top: 50px;
+    right: 100px;
+}
+.Gym-Fit h1 {
+    padding-bottom: 15px;
+    color: #fff;
+    font-size: 60px;
+    font-weight: bold;
+}
+.Gym-Fit h2 {
+    color: #eb699e;
+    font-size: 45px;
+    line-height: 2;
+    font-weight: bold;
+    padding-bottom: 20px;
+    margin-left: 30px;
+    display: block;
+}
+.Gym-Fit p {
+    color: #fff;
+    margin: 0;
+    font-weight: 500;
+    font-size: 15px;
+    margin-left: 30px;
+}
+.Read-More-btn {
+    display: inline-block;
+    font-size: 17px;
+    background-color: transparent;
+    border: #eb699e solid 2px;
+    color: #eb699e;
+    padding: 15px 0PX;
+    margin-bottom: 30px;
+    width: 95%;
+    max-width: 190px;
+    text-align: center;
+    transition: ease-in all 0.5s;
+    text-decoration: none;
+    margin-top: 20px;
+    margin-left: 20px;
+    border-radius: 10px;
+
+}
+.Read-More-btn:hover{
+    text-decoration: none;
+    border: 1px solid #eb699e;
+    background-color: #fff;
+}
+.text-img {
+    flex-basis: 48%;
+    padding: 30px 2px;
+}
+.text-img img{
+    width: 100%;
+}
+
+.nav-bar .fa-bars{
+    display: none;
+    overflow: hidden;
+    min-width: none;
+}
+
+nav .fa{
+    display: none;
+}
+
+@media(min-width: 501px) and (max-width: 768px)  {
+.Gym-Fit h1  {
+    font-size: 35px;
+}
+.Gym-Fit h2 {
+    font-size: 25px;
+    position: relative;
+    /* right: 10%; */
+}
+.Gym-Fit p {
+    position: relative;
+    right: 10%;
+    font-size: 25px;
+}
+.nav-bar ul  {
+    font-weight: bold;
+    flex-direction: column;
+    width: 50%;
+}
+.nav-bar li {
+    text-align: center;
+}
+
+.nav-bar .remove{
+    display: none; 
+    
+}
+.nav-bar  li a {
+    color:#fff;
+    margin: 20px;
+}
+.icon i {
+    margin: 20px;
+    display : none;
+}
+nav .fa {
+    display: block;
+    color: #000;
+    margin: 10px;
+    font-size: 22px;
+    cursor: pointer;
+}
+.togger-button{
+    display: none;
+} 
+i .fa .fa-bars .remove{
+    display: none;
+}
+}
+
+@media(max-width:768px)  {
+.nav-link ul li{
+    display: block;
+ }
+ .nav-link{
+    position: fixed;
+    background:#eb699e;
+    height: 100vh;
+    width: 200px;
+    top: 0;
+    right:-200px;
+    text-align: left;
+    z-index: 2;
+    transition: 1s;
+} 
+nav .fa{
+  display: block;
+  color: rgb(3, 17, 9);
+  margin: 10px;
+  font-size: 22px;
+  cursor:pointer;
+}
+.nav-link ul{
+    padding: 30px;
+   }
+
+}
+
+@media(min-width: 320px) and (max-width: 500px)  {
+    .Gym-Fit h1{
+        font-size: 30px;
+    }
+    .Gym-Fit h2 {
+        font-size: 25px;
+        position: relative;
+        right: 10%;
+    }
+    .nav-bar ul  {
+        font-weight: bold;
+        flex-direction: column;
+        width: 10%;
+        /* display: none; */
+    }
+    .nav-bar li {
+        text-align: right;
+        position: relative;
+        /* display: none; */
+    }
+    .text-box{
+        display: block;
+    }
+    .togger-button{
+        display: none;
+    } 
+   
+}
+ /*-----Our Feature Classes-------*/
+
+.Feature-Section {
+    display: block;
+    background: #fff;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    padding-top: 100px;
+    text-align: center;
+    overflow: hidden;
+}
+.Feature-Section h1{
+    font-size: 36px;
+    font-weight: 600;
+    color: #000;
+
+}
+.Feature-Section p{
+    font-size: 16px;
+    line-height: 22px;
+    color: #eb699e;
+    font-weight: 300;
+    display: block;
+    padding-top: 10px;
+}
+.Feature {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.Feature-col {
+    flex-basis: 31%;
+    display: inline-block;
+    margin: 20px;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    box-shadow: #ddd 0px 0px 10px 0px;
+}
+.Feature-col h2 {
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+    font-size: 20px;
+}
+.Read-More-btn-btn {
+    display: inline-block;
+    font-size: 17px;
+    background-color: transparent;
+    border: #eb699e solid 2px;
+    color: #eb699e;
+    padding: 15px 0px;
+    margin-bottom: 50px;
+    width: 95%;
+    max-width: 190px;
+    text-align: center;
+    transition: ease-in all 0.5s;
+    text-decoration: none;
+    border-radius: 10px;
+}
+.Read-More-btn-btn:hover {
+    text-decoration: none;
+    border: 1px solid #eb699e;
+    background-color: #000;
+}
+@media(min-width: 501px) and (max-width: 768px) {
+    .Feature{
+         display: block;
+    }
+}
+@media(min-width: 320px) and (max-width: 500px){
+    .Feature{
+        display: block;
+   }
+}
+
+/*------call to action------*/
+
+.cta {
+    margin:100px auto;
+    width: 100%;
+    background-image: url(./images/disco.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    padding: 100px 0;
+}
+.cta h1 {
+    color: #fff;
+    margin-bottom: 40px;
+    padding: 0;
+    font-size: 40px;
+}
+.cta p {
+    color: #fff;
+    margin-bottom: 40px;
+    padding: 0;
+    font-size: 20px;
+    line-height: -5%;
+}
+.Read-More-btn {
+    display: inline-block;
+    font-size: 17px;
+    background-color: transparent;
+    border: #eb699e solid 2px;
+    color: #eb699e;
+    padding: 15px 0PX;
+    margin-bottom: 30px;
+    width: 95%;
+    max-width: 190px;
+    text-align: center;
+    transition: ease-in all 0.5s;
+    text-decoration: none;
+}
+.Read-More-btn:hover{
+    text-decoration: none;
+    border: 1px solid #eb699e;
+    background-color: #fff;
+}
+
+/*------contact us Page------*/
+
+.contact-us {
+    display: block;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    padding-top: 100px;
+    text-align: center;
+    overflow: hidden;
+}
+.contact-us-col-col {
+    background: #eb699e;
+    width: 25%;
+    display: flex;
+    justify-content: right;
+    padding-top: 20px;
+    height: 15%;
+    border-radius: 10px;
+}
+.contact-us-col h2 {
+    font-size: 36px;
+    font-weight: 600;
+}
+.contact-us-col p {
+    font-size: 13px;
+    line-height: 22px;
+    font-weight: 300;
+    display: block;
+    padding-top: 10px;
+    color: #000;
+}
+.contact {
+    display: flex;
+    justify-content: left;
+    /* width: 95%; */
+    margin: auto;
+    padding-top: 50px;
+    right: 100px;
+}
+.form-1 {
+    margin-left: 50px;
+}
+.form-1 input {
+    border: #f6c2d7 solid 1px;
+    padding: 0 19px;
+    margin-bottom: 20px;
+    width: 80%;
+    height: 45px;
+    background: transparent;
+    color: #f5bed2;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 20px;
+    text-align: center;
+}
+.form-1 textarea {
+    border: #f6c2d7 solid 1px;
+    padding: 0 19px;
+    margin-bottom: 20px;
+    width: 80%;
+    height: 45px;
+    background: transparent;
+    color: #f5bed2;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 20px;
+    text-align: center;
+}
+.Send-btn {
+    font-size: 17px;
+    transition: ease-in all 0.5s;
+    background-color: #efb68d;
+    color: #fff;
+    padding: 13px 0px;
+    margin: 0 auto;
+    max-width: 200px;
+    width: 100%;
+    display: block;
+    font-weight: 500;
+    text-transform: uppercase;
+    border-radius: 35px;
+    /* align-items: center; */
+}
+.Send-btn:hover {
+    text-decoration: none;
+    border: 1px solid #eb699e;
+    background-color: #000;
+}
+.contact-img {
+    flex-basis: 48%;
+    padding: 30px 2px;
+    margin-left: 80px;
+    margin-bottom: 50px;
+}
+.contact-img img{
+    width: 150%;
+    height: auto;
+}
+@media(min-width: 501px) and (max-width: 768px) {
+    .contact-us-col h2 {
+        font-size: 25px;
+    }
+    .contact-us-col p {
+        font-size: 20px;
+        text-align: center;
+    }
+    .contact {
+        flex-direction: column;
+        margin-left: 40%;
+        }
+    .contact-img{
+      display: block;
+      width: 50%;
+      position: relative;
+      right: 30%;
+    }
+    .contact-us-col-col {
+        background: #eb699e;
+        width: 50%;
+        display: inline-block;
+        padding-top: 20px;
+        height: 15%;
+        position: relative;
+        right: 50px;
+    }
+    .Send-btn {
+     position: relative;
+     right: 20px;
+     bottom: 5px;
+    }
+}
+@media(min-width: 320px) and (max-width: 500px){
+    .contact {
+        display: block;
+    }
+    .contact-us-col-col{
+        position: relative;
+        width:270px;
+        margin-left: 25px;
+    }
+    .Send-btn {
+        position: relative;
+        right: 20px;
+        bottom: 5px;
+       }
+    .contact-img{
+        display: block;
+        width: 90%;
+        position: relative;
+        right: 20%;
+      }
+   
+
+}
+
+/*------Persons---------*/
+.Person {
+    background-image: url(./images/cli.jpg);
+}
+.What-People-Says {
+    color: #FFFFFF;
+    text-align: center;
+    line-height: 2;
+}
+.What-People-Says h2 {
+    font-size: 50px;
+}
+.What-People-Says p {
+    font-size: 20px;
+}
+
+/*------------footer---------*/
+
+.Footer-res {
+    display: block;
+    background: #000;
+    /* width: 100%; */
+    height: 100%;
+    margin: auto;
+    padding-top: 100px;
+    text-align: center;
+    overflow: hidden;
+    margin-top: 50px;
+    
+}
+.Footer-res h3 {
+    font-size: 36px;
+    font-weight: 600;
+    color: #daccfd;
+}
+.Footer-res h2 {
+    font-size: 36px;
+    font-weight: 600;
+    color: #fff;
+}
+.Footer-res p{
+    font-size: 13px;
+    line-height: 22px;
+    color: #fff;
+    font-weight: 300;
+    display: block;
+    padding-top: 10px;
+}
+.inputs {
+    padding: 0 19px;
+    margin-bottom: 20px;
+    width: 30%;
+    height: 45px;
+    background: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 35px;
+    position: relative;
+    left: 35%;
+}
+.rounded-pill {
+    font-size: 17px;
+    background-color: #efb68d;
+    color: rgb(26, 24, 24);
+    position: relative;
+    left: 45%;
+    padding: 9px;
+}
+.rounded-pill:hover {
+    text-decoration: none;
+    border: 1px solid #efb68d;
+    background-color: #eb699e;
+}
+.Footer-res h2 {
+    color: #fff;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+}
+.hr-tag{
+    color: #fff;
+    position: relative;
+}
+.hr-td{
+    position: relative;
+    color: #fff;
+}
+@media(min-width: 501px) and (max-width: 768px) {
+    .inputs{
+        position: relative;
+        right: 30px;
+    }
+}
+
+
